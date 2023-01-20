@@ -1,0 +1,66 @@
+@import '@/styles/__settings.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: 100vh;
+  @include center();
+
+  .codeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 320px;
+    height: 497px;
+    background-color: #ffffff;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0476518);
+    border-radius: 20px;
+
+    .qrCode {
+      width: 288px;
+      height: 288px;
+      margin-top: 16px;
+      margin-left: 16px;
+      border-radius: 10px;
+      background-image: url('/image-qr-code.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 288px;
+      height: 129px;
+      margin-left: 16px;
+      margin-right: 16px;
+
+      .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: #1f314f;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+
+      .subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.1875px;
+        margin-left: 16px;
+        margin-right: 16px;
+        color: #7d889e;
+      }
+    }
+  }
+}

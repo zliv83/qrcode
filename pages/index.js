@@ -1,5 +1,5 @@
-import styles from '@/styles/pages/Home.module.scss';
+import QRCode from '@/components/utilities/Backdrop/QRCode';
 
 export default function Home() {
-  return <div className={styles.page}>Home</div>;
+  return <QRCode />;
 }
